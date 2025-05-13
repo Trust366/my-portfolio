@@ -3,13 +3,12 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const About = () => {
   const frontendSkills = [
     "React",
-    "Vue",
     "TypeScript",
     "TailwindCSS",
-    "Svelte",
+    "Next.js",
   ];
 
-  const backendSkills = ["Node.js", "Python", "AWS", "MongoDB", "GraphQL"];
+  const backendSkills = ["Node.js", "Python", "MongoDB", "Postgresql"];
 
   return (
     <section
@@ -18,17 +17,18 @@ export const About = () => {
     >
       <RevealOnScroll>
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
-            {" "}
+          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-500 to-fuchsia-400 bg-clip-text text-transparent text-center">
             About Me
           </h2>
 
           <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-300 mb-6">
-              Passionate developer with expertise in building scalable web
-              applications and creating innovative solutions.
+              Passionate Full-Stack Developer with a love for creating impactful digital experiences and
+              constantly learning new technologies.
             </p>
-
+            <p>
+              <a href="https://github.com/Trust366" className="text-purple-500 hover:bg-purple-500/20">Github</a>
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4"> Frontend</h3>
@@ -36,8 +36,8 @@ export const About = () => {
                   {frontendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition
+                      className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20 
+                                    hover:shadow-[0_2px_8px_rgba(168,85,247,0.2)] transition
                     "
                     >
                       {tech}
@@ -52,8 +52,8 @@ export const About = () => {
                   {backendSkills.map((tech, key) => (
                     <span
                       key={key}
-                      className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue-500/20 
-                                    hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition
+                      className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20 
+                                    hover:shadow-[0_2px_8px_rgba(168,85,247,0.2)] transition
                     "
                     >
                       {tech}
@@ -66,16 +66,36 @@ export const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
-              <h3 className="text-xl font-bold mb-4"> 🏫 Education </h3>
+              <h3 className="text-xl font-bold mb-4"> 🏫 Certification </h3>
               <ul className="list-disc list-inside text-gray-300 space-y-2">
                 <li>
-                  <strong> B.S. in Computer Science </strong> - XYZ University
-                  (2016-2020)
+                  <strong> MERN Stack Development</strong> - APTECH COMPUTER EDUCATION
+                  (Duration: 6 months)
                 </li>
-                <li>
-                  Relevant Coursework: Data Structures, Web Development, Cloud
-                  Computing...
-                </li>
+                
+                
+
+Completed an intensive hands-on program focused on full-stack JavaScript development using the MERN stack (MongoDB, Express.js, React, Node.js).
+Key Highlights:
+<li>
+  
+Built dynamic and responsive user interfaces using React and Tailwind CSS
+
+</li>
+
+<li>
+Developed RESTful APIs and server-side logic with Node.js and Express.js
+
+</li>
+<li>Designed and managed databases with MongoDB, including CRUD operations and schema design
+</li>
+<li>Gained practical experience through real-world projects, collaborative coding, and version control with Git
+</li>
+<li>Strengthened problem-solving and debugging skills while building scalable full-stack web applications
+</li>
+
+
+                
               </ul>
             </div>
             <div className="p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
@@ -83,23 +103,21 @@ export const About = () => {
               <div className="space-y-4 text-gray-300">
                 <div>
                   <h4 className="font-semibold">
-                    {" "}
-                    Software Engineer at ABC Corp (2020 - Present){" "}
+                  Fullstack Developer Tutor – Onet Solutions Ltd (2024 – Present)
                   </h4>
                   <p>
-                    Developed and maintained microservices for cloud-based
-                    applications.
+                  Mentored aspiring developers in fullstack web development using modern technologies like React, Node.js, Express, and MongoDB. Designed project-based learning modules and guided students through real-world application development.
+
+
                   </p>
                 </div>
 
                 <div>
                   <h4 className="font-semibold">
-                    {" "}
-                    Intern at DEF Startups (2019){" "}
+                  Backend Developer Intern & Team Lead – HNG Internship (2023)
                   </h4>
                   <p>
-                    Assisted in building front-end components and integration
-                    REST APIs
+                  Led a backend team in developing scalable REST APIs using Python and Django. Managed team tasks, ensured timely delivery of features, and facilitated effective collaboration. Contributed to database design, API integration, and debugging processes in a fast-paced, agile environment.
                   </p>
                 </div>
               </div>
