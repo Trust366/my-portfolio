@@ -68,6 +68,35 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
+            
+
+            {/* Job Portal Web App */}
+<div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-purple-500/30 hover:shadow-[0_2px_8px_rgba(168,85,247,0.2)] transition">
+  <h3 className="text-xl font-bold mb-2">Job Portal Web App</h3>
+  <p className="text-gray-400 mb-4">
+    A full-stack job portal where users can sign up, post and apply for jobs, and manage their applications. Includes company dashboards, authentication, and role-based access.
+  </p>
+  <div className="flex flex-wrap gap-2 mb-4">
+    {["React", "Vite", "Tailwind CSS", "Express.js", "MongoDB"].map((tech, key) => (
+      <span
+        key={key}
+        className="bg-purple-500/10 text-purple-500 py-1 px-3 rounded-full text-sm hover:bg-purple-500/20 hover:shadow-[0_2px_8px_rgba(168,85,247,0.1)] transition-all"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
+  <div className="flex justify-between items-center">
+    <a
+      href="https://job-portal-indol-phi.vercel.app/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-purple-400 hover:text-purple-300 transition-colors my-4"
+    >
+      View Project →
+    </a>
+  </div>
+</div>
 
             {/* Leave space for more projects */}
             {/* You can paste the other two projects here later */}
